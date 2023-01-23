@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Technology';
+    src: url('./../fonts/Technology-Bold.ttf');
+}
+.allCard{
+   display: grid;
+   place-items: center;
+   top: 20%;
+}
+.containerCard{
+    background-color: #31F408;
+    width: 20%;
+    height: 375px;
+    box-shadow: 1em 1em rgb(128, 128, 128, 30%);
+    display: flex;
+    justify-content: center;
+}
+.infoCard{
+    background-color: #7CF706;
+    width: 95%;
+    height: 95%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.imgCharacter{
+    margin: 10px auto 0px;
+    width: 85%;
+    height: 70%;
+}
+.characterName{
+    text-align: center;
+    font-family: 'Technology';
+    font-size: 3.5em;
+}
+.selectButton{
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    font-family: 'Technology';
+    font-size: 3em;
+    cursor: pointer;
+    position: relative;
+    border: none;
+}
+.selectButton::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(90deg, rgba(65,180,201,1) 0%, rgba(191,222,66,1) 100%);
+    background-size: 800%;
+    filter: blur(15px);
+    animation: glowing 20s linear infinite;
+}
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.selectButton:hover{
+    transform: scale(1.3) perspective(1px);
+}
+.arrowOne{
+    position: absolute;
+    left: 400px;
+    top: 300px;
+}
+
+.arrowTwo{
+    position: absolute;
+    left: 870px;
+    top: 300px;
+}
+
+

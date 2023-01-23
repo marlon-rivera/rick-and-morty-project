@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Technology';
+    src: url('./../fonts/Technology-Bold.ttf');
+}
+.navbar{
+    width: 40%;
+    display: flex;
+    margin-left:17%;
+}
+.containerOptions{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    margin: 20px 20px;
+}
+.options{
+    font-family: 'Technology';
+    font-size: 25px;
+    color: white;
+    float: left;
+    margin: auto;
+    background-image: linear-gradient(#41b4c9, #bfde42);
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.searchF{
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 210px;
+}
+.searchBar{
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Technology';
+    background-color: black;
+    font-size: 20px;
+    width: fit-content;
+    color: white;
+    width: 70%;
+    margin: auto 10px;
+}
+.searchBar:focus{
+    outline: none;
+}
+
+.buttonSearch{
+    border: none;
+    background-color: black;
+}
+.borderunderline{
+    display: inline;
+}
