@@ -20,6 +20,9 @@
     color: white;
     float: left;
     margin: auto;
+    text-decoration: none;
+}
+.selected{
     background-image: linear-gradient(#41b4c9, #bfde42);
     background-size: 100% 3px;
     background-repeat: no-repeat;

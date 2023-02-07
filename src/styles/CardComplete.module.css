@@ -1,0 +1,17 @@
+.containerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.arrowL{
+    position: absolute;
+    margin-right: 400px;
+}
+.card{
+    
+}
+.arrowR{
+     position: absolute;
+    margin-left: 400px;
+}

@@ -5,14 +5,13 @@
 .allCard{
    display: grid;
    place-items: center;
-   top: 20%;
+   width: 850px;
 }
 .containerCard{
     background-color: #31F408;
-    width: 20%;
+    width: 30%;
     height: 375px;
     box-shadow: 1em 1em rgb(128, 128, 128, 30%);
-    display: flex;
     justify-content: center;
 }
 .infoCard{
@@ -33,6 +32,8 @@
     text-align: center;
     font-family: 'Technology';
     font-size: 3.5em;
+    margin: auto;
+    color: black;
 }
 .selectButton{
     margin-top: 40px;
@@ -71,16 +72,11 @@
 .selectButton:hover{
     transform: scale(1.3) perspective(1px);
 }
-.arrowOne{
-    position: absolute;
-    left: 400px;
-    top: 300px;
+
+.arrowL{
+    background-image: url('./../img/arrowL.png');
 }
-
-.arrowTwo{
-    position: absolute;
-    left: 870px;
-    top: 300px;
+.link{
+    text-decoration: none;
+    color: white;
 }
-
-
