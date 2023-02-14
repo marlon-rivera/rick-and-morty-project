@@ -1,6 +1,4 @@
 export const GET_CHARACTER = "GET_CHARACTER";
-export const NEXT_CHARACTER = "NEXT_CHARACTER";
-export const PREV_CHARACTER = "PREV_CHARACTER";
 export const TOTAL_CHARACTERS = "TOTAL_CHARACTERS";
 const APi_CHARACTER = "https://rickandmortyapi.com/api/character/";
 

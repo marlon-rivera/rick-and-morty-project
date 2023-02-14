@@ -3,22 +3,25 @@
     src: url('./../fonts/Technology-Bold.ttf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 .description{
     display: flex;
 }
 .background{
     width: 500px;
-    height: 500px;
+    height: 483px;
     background-size: cover;
     background-position: center;
     background-image: url('./../img/portal.gif');
 }
 .image{
     width: fit-content;
-    height: 277px;
+    height: fit-content;
     position: relative;
-    left: 25%;
-    top: 100px;
+    left: 52%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border: 3px solid rgba(191,222,66,1);
     border-radius: 10px;
 }
@@ -31,10 +34,16 @@ h1{
 }
 h3{
     color: white;
-    font-family: 'Technology';
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 100px;
+    font-family: 'Technology';
+    font-weight: 300;
+    margin-top: 5px;
 }
 a{
     color: white;
+}
+.info{
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 30px;
 }

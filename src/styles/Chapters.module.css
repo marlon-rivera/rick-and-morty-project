@@ -1,0 +1,13 @@
+.containerChapters{
+    display: flex;
+    flex-direction: column;
+}
+.chapters{
+    width: 80%;
+    min-height: 483px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

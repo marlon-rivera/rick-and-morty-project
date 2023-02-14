@@ -2,14 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
 }
 .arrowL{
     position: absolute;
     margin-right: 400px;
-}
-.card{
-    
 }
 .arrowR{
      position: absolute;

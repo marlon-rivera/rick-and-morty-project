@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Technology';
+    src: url('./../fonts/Technology-Bold.ttf');
+}
+.containerChapter{
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    background-color: #31F408;
+    box-shadow: 10px 10px rgb(128, 128, 128, 30%);
+}
+.infoChapter{
+    background-color: #7CF706;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+.infoEpisode{
+    font-family: 'Technology';
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+}
