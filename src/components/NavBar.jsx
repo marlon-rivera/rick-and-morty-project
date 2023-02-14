@@ -97,6 +97,7 @@ function NavBar(props) {
                 {results.length > 0 ? (
                   results.map((r) => {
                     return (
+                      //rick-and-morty-project
                       <Link to="/home" key={r.id} onClick={()=>{props.getCharacter(r.id)}} className={styles.infoResult}>
                         {r.name}
                       </Link>
