@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rick-and-morty-project/static/css/main.3becd4a4.css",
+    "main.js": "/rick-and-morty-project/static/js/main.75fbdee4.js",
+    "static/media/portalAux.gif": "/rick-and-morty-project/static/media/portalAux.76423f5936a1f1f6fd9b.gif",
+    "static/media/portal.gif": "/rick-and-morty-project/static/media/portal.aeba5f348bebb0717a11.gif",
+    "static/media/rickandmortyportal.png": "/rick-and-morty-project/static/media/rickandmortyportal.d64fdf4dda0037d896d1.png",
+    "static/media/backgroundpepinillo.jpg": "/rick-and-morty-project/static/media/backgroundpepinillo.64aad9deba8c9ec18a87.jpg",
+    "static/media/logo.jpg": "/rick-and-morty-project/static/media/logo.9d987000b1a6f6e35505.jpg",
+    "static/media/loading.gif": "/rick-and-morty-project/static/media/loading.30c0aa7c3e2579d868a6.gif",
+    "static/media/Technology-Bold.ttf": "/rick-and-morty-project/static/media/Technology-Bold.8cdd2cfe2ab96f416aff.ttf",
+    "static/media/arrowL.png": "/rick-and-morty-project/static/media/arrowL.34a8516305ba2b936e29.png",
+    "static/media/space.jpg": "/rick-and-morty-project/static/media/space.ef806b971b9313bcda4b.jpg",
+    "index.html": "/rick-and-morty-project/index.html",
+    "main.3becd4a4.css.map": "/rick-and-morty-project/static/css/main.3becd4a4.css.map",
+    "main.75fbdee4.js.map": "/rick-and-morty-project/static/js/main.75fbdee4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3becd4a4.css",
+    "static/js/main.75fbdee4.js"
+  ]
+}
