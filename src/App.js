@@ -18,7 +18,7 @@ function App(props) {
   useEffect(() => {
     props.getCharacter(1);
     console.log(props.episodes)
-  }, []);
+  }, [props.character]);
 
   return (
     <div className="App">
