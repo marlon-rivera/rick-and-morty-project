@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./../styles/NavBar.module.css";
 import Logo from "./../img/logo.jpg";
 import Searchicon from "./../img/searchicon.png";
 import { Link, useLocation } from "react-router-dom";
 import { connect } from "react-redux";
 import { getCharacter } from "../js/redux/actionsCreators/actions";
+import { Redirect } from "react-router-dom";
 
 const LINK_API_CHARACTER_BY_NAME =
   "https://rickandmortyapi.com/api/character/?name=";

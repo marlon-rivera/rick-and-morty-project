@@ -1,4 +1,4 @@
-import { GET_CHARACTER, TOTAL_CHARACTERS, DELETE_CHARACTER } from "../actionsCreators/actions";
+import { GET_CHARACTER, TOTAL_CHARACTERS } from "../actionsCreators/actions";
 
 const initialState = {
   character: null,
@@ -19,11 +19,6 @@ function rootReducer(state = initialState, action) {
         ...state,
         totalCharacters : action.payload.info.count
       };
-    case DELETE_CHARACTER:
-      return{
-        character : null,
-        idCharacter : null
-      }
     default:
       return state;
   }

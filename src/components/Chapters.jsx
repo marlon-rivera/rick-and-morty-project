@@ -21,7 +21,7 @@ function Chapters(props) {
       }
     })()
     
-  }, [props.character.episode.length])
+  },[])
 
   return (
     <div className={Styles.containerChapters}>

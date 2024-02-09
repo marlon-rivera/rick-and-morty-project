@@ -12,24 +12,21 @@
     width: 30%;
     height: 375px;
     box-shadow: 1em 1em rgb(128, 128, 128, 30%);
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 .infoCard{
     background-color: #7CF706;
     width: 95%;
     height: 95%;
-    flex-direction: column;
+    position: relative;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    flex-direction: column;
 }
 .imgCharacter{
     margin: 10px auto 0px;
-    width: 15vw;
-    height: 17vw;
+    width: 85%;
+    height: 70%;
 }
 .characterName{
     text-align: center;

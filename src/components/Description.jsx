@@ -9,7 +9,7 @@ function Description(props) {
         <div className={Styles.description}>
           <div className={Styles.background}>
             <div  className={Styles.image}>
-              <img src={props.character.image} width="250px" alt={props.character.image}/>
+              <img src={props.character.image} width="250px"/>
             </div>
           </div>
           <div>
@@ -19,7 +19,7 @@ function Description(props) {
             <h3>CREATED: <span className={Styles.info}>{props.character.created}</span></h3>
             <h3>GENDER: <span className={Styles.info}>{props.character.gender}</span></h3>
             <h3>ORIGIN: <span className={Styles.info}>{props.character.origin.name}</span></h3>
-            <h3>URL: <span className={Styles.info}><a href={props.character.url} target="_blank" rel="noreferrer">{props.character.url}</a></span></h3>
+            <h3>URL: <span className={Styles.info}><a href={props.character.url} target="_blank">{props.character.url}</a></span></h3>
             <h3>EPISODES:   <span className={Styles.info}><Link to="/chapters">{props.character.episode.length}</Link></span></h3>
           </div>
         </div>
