@@ -20,7 +20,7 @@ function Chapter(props) {
           <h5 className={Styles.infoEpisode}>Number : {props.chapter.id}</h5>
           <h5 className={Styles.infoEpisode}>Air Date : {props.chapter.air_date}</h5>
           <h5 className={Styles.infoEpisode}>Episode : {props.chapter.episode}</h5>
-          <h5 className={Styles.infoEpisode}>URL : <a href={props.chapter.url} target="_blank">CLiCk HERE</a></h5>
+          <h5 className={Styles.infoEpisode}>URL : <a href={props.chapter.url} target="_blank" rel="noreferrer">CLiCk HERE</a></h5>
         </div>
       </div>
     </div>

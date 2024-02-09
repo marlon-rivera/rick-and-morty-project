@@ -21,7 +21,7 @@ function Chapters(props) {
       }
     })()
     
-  },[])
+  })
 
   return (
     <div className={Styles.containerChapters}>

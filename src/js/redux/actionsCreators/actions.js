@@ -1,6 +1,14 @@
 export const GET_CHARACTER = "GET_CHARACTER";
 export const TOTAL_CHARACTERS = "TOTAL_CHARACTERS";
+export const DELETE_CHARACTER = "DELETE_CHARACTER"
 const APi_CHARACTER = "https://rickandmortyapi.com/api/character/";
+
+export const deleteCharacter = () => (dispatch) => {
+  return dispatch({
+    type: DELETE_CHARACTER,
+    payload : null
+  })
+}
 
 export const getCharacter = (id) => async (dispatch) => {
   return await fetch(APi_CHARACTER + id)

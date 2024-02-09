@@ -3,10 +3,11 @@ import { connect } from "react-redux";
 import Card from "./Card";
 import Button from "./Button";
 import styles from "../styles/CardComplete.module.css";
-import { getCharacter } from "../js/redux/actionsCreators/actions";
+import { deleteCharacter, getCharacter } from "../js/redux/actionsCreators/actions";
 
 function CardComplete(props) {
   function nextHandler() {
+    props.deleteCharacter()
     if (props.character.id !== props.totalCharacters) {
       props.getCharacter(props.character.id + 1);
     } else {
@@ -15,8 +16,10 @@ function CardComplete(props) {
   }
 
   function prevHandler() {
+    props.deleteCharacter()
     if (props.character.id !== 1) {
       props.getCharacter(props.character.id - 1);
+
     } else {
       props.getCharacter(props.totalCharacters);
     }
@@ -48,6 +51,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     getCharacter: (id) => dispatch(getCharacter(id)),
+    deleteCharacter : () => dispatch(deleteCharacter())
   };
 }
 
