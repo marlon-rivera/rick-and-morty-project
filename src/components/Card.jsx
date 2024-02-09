@@ -12,11 +12,13 @@ function Card(props) {
       <div className={styles.containerCard}>
         <div className={styles.infoCard}>
           <img
-            src={props.character.image ? props.character.image : loading}
-            alt={props.character.image}
+            src={props.character ? props.character.image : loading}
+            alt={props.character ? props.character.image : null}
             className={styles.imgCharacter}
+            loading="lazy"
           />
-          <h3 className={styles.characterName}>{props.character.name.split(' ').length > 2 ? props.character.name.split(' ').slice(0,2).join(' ') : props.character.name}</h3>
+          {props.character && <h3 className={styles.characterName}>{props.character.name.split(' ').length > 2 ? props.character.name.split(' ').slice(0,2).join(' ') : props.character.name}</h3>}
+          {!props.character && <h3 className={styles.characterName}>Cargando...</h3>}
         </div>
       </div>
       <button className={classes}>

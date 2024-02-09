@@ -10,15 +10,13 @@ import Footer from "./components/Footer";
 import { Route, Switch } from "react-router-dom";
 import {
   getCharacter,
-  getTotalCharacters,
 } from "./js/redux/actionsCreators/actions";
 import React, { useEffect } from "react";
 
-function App(props) {
+function App({getCharacter}) {
   useEffect(() => {
-    props.getCharacter(1);
-    console.log(props.episodes)
-  }, []);
+    getCharacter(1);
+  }, [getCharacter]);
 
   return (
     <div className="App">
@@ -54,19 +52,10 @@ function App(props) {
   );
 }
 
-function mapStateToProps(state) {
-  return {
-    character: state.character,
-    totalCharacters: state.totalCharacters,
-    episodes: state.episodes
-  };
-}
-
 function mapDispatchToProps(dispatch) {
   return {
-    getCharacter: (id) => dispatch(getCharacter(id)),
-    getTotalCharacters: () => dispatch(getTotalCharacters()),
+    getCharacter: (id) => dispatch(getCharacter(id))
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);

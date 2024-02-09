@@ -4,24 +4,27 @@ import Chapter from "./Chapter";
 import Footer from "./Footer";
 import { connect } from "react-redux";
 
-function Chapters(props) {
+function Chapters({ character }) {
   let [episodes, setEpisodes] = useState([]);
-  
-  useEffect(()=>{
-    let total = props.character.episode.length;
-    (async ()=>{
-      for (let i = 0; i < total; i++) {
-        await fetch(props.character.episode[i]).then(r=>r.json()).then(r=>{
-          episodes.push(r);
-          let result = episodes.map((ep)=>{
-            return ep;
-          })
-          setEpisodes(result)
-        })
-      }
-    })()
-    
-  },[])
+
+  useEffect(() => {
+    if (episodes.length === 0) {
+      let total = character.episode.length;
+      (async () => {
+        for (let i = 0; i < total; i++) {
+          await fetch(character.episode[i])
+            .then((r) => r.json())
+            .then((r) => {
+              episodes.push(r);
+              let result = episodes.map((ep) => {
+                return ep;
+              });
+              setEpisodes(result);
+            });
+        }
+      })();
+    }
+  }, [character, episodes]);
 
   return (
     <div className={Styles.containerChapters}>
